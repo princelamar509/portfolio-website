@@ -1,0 +1,86 @@
+/* Education.css */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.experience-section {
+  background: linear-gradient(
+    to right,
+    rgb(93, 20, 90) 0%,
+    #afeeee 50%,
+    #afeeee 50%,
+    rgb(118, 58, 130) 100%
+  );
+  padding: 50px 20px;
+}
+
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+
+.timeline-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25px;
+  width: 2px;
+  background-color: #0cffff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  font-size: 1.2rem;
+}
+
+.timeline-item::before {
+  content: "\f19d"; /* Example Font Awesome icon (fa-graduation-cap) */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: -5px; /* Adjust as needed */
+  left: -35px; /* Adjust as needed */
+  font-size: 20px;
+  color: #0cffff;
+}
+
+.timeline-date {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.timeline-content {
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}

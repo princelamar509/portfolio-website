@@ -1,0 +1,24 @@
+/* Global styles for the App */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(
+      to right,
+      rgb(67, 2, 66) 0%,
+      #afeeee 50%,
+      #afeeee 50%,
+      rgb(128, 45, 145) 100%
+    );
+    
+}
+  
+  .App {
+    text-align: center;
+  }
+  
+  section {
+    padding: 60px 20px;
+  }
+  

@@ -1,0 +1,89 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background: linear-gradient(
+      to right,
+      rgb(93, 20, 90) 0%,
+      #afeeee 50%,
+      #afeeee 50%,
+      rgb(118, 58, 130) 100%
+    );
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-out;
+  
+}
+
+
+
+.about img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  animation: float 4s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+  box-shadow: #333 0 0 10px;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  color: #000;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+}
+
+/* Floating animation for the image */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* SVG Background Animation */
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><g fill="none" stroke="#eee" stroke-width="2"><path d="M200 300 Q400 50 600 300 T1000 300" stroke-dasharray="10,10"/><circle cx="400" cy="300" r="200" stroke-dasharray="5,5"/><path d="M100 100 Q300 400 500 100 T900 100" stroke-dasharray="15,15"/><circle cx="600" cy="100" r="100" stroke-dasharray="8,8"/></g></svg>');
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}

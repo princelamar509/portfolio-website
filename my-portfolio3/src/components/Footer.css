@@ -1,0 +1,34 @@
+.footer {
+  background: linear-gradient(
+      to right,
+      rgb(179, 113, 178) 0%,
+      #afeeee 50%,
+      #afeeee 50%,
+      rgb(135, 76, 147) 100%
+    );
+
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.back-to-top {
+background-color: #059290;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  border-radius: 5px;
+}
+
+.back-to-top:hover {
+  background: linear-gradient(45deg, #695050, #059290);
+}
+
+.footer p {
+  margin: 0;
+}

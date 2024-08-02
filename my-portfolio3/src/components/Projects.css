@@ -1,0 +1,103 @@
+/* Projects.css */
+
+.projects-section {
+  padding: 60px 20px;
+  background: linear-gradient(
+    to right,
+    rgb(93, 20, 90) 0%,
+    #afeeee 50%,
+    #afeeee 50%,
+    rgb(118, 58, 130) 100%
+  );
+ 
+}
+
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+color: #000;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  
+}
+
+.filter-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: transparent;
+  color: rgb(20, 231, 178);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.filter-button.active,
+.filter-button:hover {
+  background-color: #b811b8;
+  transform: scale(1.05);
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  flex: 0 0 calc(43.33% - 20px);
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(83, 5, 91, 0.1);
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-card .project-link {
+  text-decoration: none;
+  color: rgb(20, 231, 178);
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1.2rem;
+}
+
+.project-card .project-link:hover {
+  color: #25d1e4;
+  box-shadow: 0 0 10px #25d1e4;
+  background: linear-gradient(45deg, #695050, #f901f1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
